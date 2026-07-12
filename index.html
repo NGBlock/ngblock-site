@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>ngblock.de</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    main {
-      flex: 1;
-    }
-    footer {
-      font-size: 10px;
-      color: #999;
-      text-align: center;
-      padding: 20px;
-      line-height: 1.4;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ngblock — im Entwurf</title>
+  <meta name="description" content="ngblock.de — persönliche Seite im Aufbau. Bald: Blog, Projekte, Über mich." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>yo</h1>
-    <h1>willkommen auf dieser peak Seite</h1>
-    <br>
-    <p>Shoutout an Travis Scott</p>
-    <a href="https://www.travisscott.com/">Link zu Travis Scott</a>
+
+  <!-- Blueprint-Rastermuster im Hintergrund -->
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Passmarken in den Ecken, wie auf einer technischen Zeichnung -->
+  <div class="plate-marks" aria-hidden="true">
+    <span class="mark mark--tl">NGB—Ø1</span>
+    <span class="mark mark--tr">MASSSTAB 1:1</span>
+    <span class="mark mark--bl">STATUS: ENTWURF</span>
+    <span class="mark mark--br"><span data-year>2026</span>.Ø7 REV.</span>
+  </div>
+
+  <main class="hero">
+    <div class="cube-wrap">
+      <svg class="cube" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <path class="cube-path" d="M60 8 L106 34 L106 86 L60 112 L14 86 L14 34 Z" />
+        <path class="cube-path" d="M60 8 L60 60 M60 60 L106 34 M60 60 L14 34 M60 60 L60 112" />
+      </svg>
+    </div>
+
+    <h1 class="wordmark">
+      ngblock
+      <span class="underline" aria-hidden="true"></span>
+    </h1>
+
+    <p class="tagline">Persönliche Seite — im Entwurf</p>
+
+    <section class="plates" aria-label="Geplante Bereiche">
+      <article class="plate">
+        <span class="plate-ref">Tafel 01</span>
+        <h2>Blog</h2>
+        <span class="status-chip">geplant</span>
+        <p>Notizen, Gedanken und technisches Gekritzel.</p>
+      </article>
+
+      <article class="plate">
+        <span class="plate-ref">Tafel 02</span>
+        <h2>Projekte</h2>
+        <span class="status-chip">geplant</span>
+        <p>Ausgewählte Arbeiten, Experimente und Code.</p>
+      </article>
+
+      <article class="plate">
+        <span class="plate-ref">Tafel 03</span>
+        <h2>Über mich</h2>
+        <span class="status-chip">geplant</span>
+        <p>Wer hier baut, und warum.</p>
+      </article>
+    </section>
   </main>
 
-  <footer>
-    Rechtlicher Hinweis und Distanzierung (Disclaimer)
-Diese Website, im Folgenden auch als "die Seite", "ngblock.de" oder "das Projekt" bezeichnet, wird von einer natürlichen Person betrieben, die in keinerlei geschäftlicher, vertraglicher, freundschaftlicher, familiärer, spiritueller, astrologischer oder sonstiger wie auch immer gearteter Beziehung zu der Person steht, die öffentlich unter dem Künstlernamen "Travis Scott" bekannt ist, bürgerlich Jacques Bermon Webster II, im Folgenden ebenfalls als "der Künstler", "die genannte Person" oder schlicht "TS" bezeichnet. Der Betreiber dieser Website hat den Künstler nie persönlich getroffen, nie mit ihm telefoniert, nie mit ihm gechattet, nie mit ihm auf einem Festival gestanden, und mit an Sicherheit grenzender Wahrscheinlichkeit wird sich daran auch in absehbarer Zeit nichts ändern.
-Die auf dieser Website erfolgte Erwähnung des Namens "Travis Scott" sowie der darauf folgende Hyperlink zur offiziellen Website travisscott.com stellen ausdrücklich keine Befürwortung, Unterstützung, Sponsoring, Zusammenarbeit, Kooperation, Beauftragung, Lizenzierung, Autorisierung oder sonstige Verbindung geschäftlicher oder persönlicher Natur zwischen dem Betreiber dieser Website und dem genannten Künstler, seinem Management, seinem Label, seinen Rechtsanwälten, seiner Familie, seinen Angestellten, Zulieferern, Merchandise-Partnern oder sonstigen mit ihm in Verbindung stehenden natürlichen oder juristischen Personen dar. Sollte der Künstler, sein Management oder irgendeine mit ihm assoziierte Rechtsabteilung diese Seite jemals zu Gesicht bekommen, wird hiermit ausdrücklich und in aller Deutlichkeit klargestellt: Es handelt sich um einen frei gewählten, unverbindlichen und rein subjektiven "Shoutout" im Sinne einer positiven, wertschätzenden Erwähnung, wie sie im Internet und insbesondere in der Hip-Hop- und Musikkultur üblich, gesellschaftlich akzeptiert und rechtlich in der Regel unproblematisch ist.
-Zum Thema Markenrecht: Der Name "Travis Scott" kann als Marke, Künstlername oder geschäftliche Bezeichnung markenrechtlichen Schutz genießen. Diese Website erhebt zu keinem Zeitpunkt Anspruch auf die Nutzung dieses Namens im geschäftlichen Sinne, sondern verwendet ihn ausschließlich im Rahmen der freien Meinungsäußerung, des Zitatrechts sowie im Rahmen einer rein deskriptiven, nicht-kommerziellen Nennung. Es wird kein Merchandise unter diesem Namen verkauft, kein Ticket-Resale betrieben, keine Fan-Community monetarisiert und keinerlei Umsatz mit der Nennung des Namens erzielt.
-Zum Thema Urheberrecht: Diese Website reproduziert keine Songtexte, keine Albumcover, keine Fotografien, keine Musikvideos, keine Interviews, keine Notenblätter, keine Konzertmitschnitte oder sonstige urheberrechtlich geschützte Werke des genannten Künstlers oder seines Labels. Der einzige "Inhalt" in Bezug auf den Künstler ist der Klartext-Name in Kombination mit einem Hyperlink zu dessen eigener, öffentlich zugänglicher, offizieller Website – eine gängige und rechtlich unbedenkliche Praxis, vergleichbar mit dem Verlinken einer Zeitung, eines Wikipedia-Artikels oder eines beliebigen anderen öffentlichen Webangebots.
-Zum Thema Persönlichkeitsrecht: Es wird an dieser Stelle betont, dass keinerlei Aussage über die Persönlichkeit, den Charakter, das Privatleben, die politischen Ansichten, die künstlerischen Fähigkeiten oder sonstige höchstpersönliche Eigenschaften des genannten Künstlers getroffen wird, die diesem schaden, ihn in ein falsches Licht rücken oder seine Persönlichkeitsrechte verletzen könnte. Die Erwähnung erfolgt ausschließlich positiv, als Ausdruck von Wertschätzung für dessen musikalisches Schaffen.
-Haftungsausschluss: Für den Inhalt der verlinkten externen Seite travisscott.com übernimmt der Betreiber dieser Website keinerlei Verantwortung, da auf deren Inhalte kein Einfluss genommen werden kann und diese sich jederzeit ändern können. Maßgeblich ist zum Zeitpunkt der Verlinkung ausschließlich der zu diesem Zeitpunkt bestehende Inhalt der Zielseite.
+  <footer class="site-footer">
+    <span>© <span data-year>2026</span> ngblock</span>
+    <span class="footer-note">Gebaut mit Absicht, noch nicht fertig.</span>
+    <a href="mailto:hallo@ngblock.de" class="contact-link">hallo@ngblock.de</a>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
